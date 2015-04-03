@@ -1,0 +1,9 @@
+G:\VisualStudioApp\TestDataBase\TestDataBase\bin\Debug\TestDataBase.exe
+G:\VisualStudioApp\TestDataBase\TestDataBase\bin\Debug\TestDataBase.pdb
+G:\VisualStudioApp\TestDataBase\TestDataBase\obj\Debug\TestDataBase.Main.resources
+G:\VisualStudioApp\TestDataBase\TestDataBase\obj\Debug\TestDataBase.Properties.Resources.resources
+G:\VisualStudioApp\TestDataBase\TestDataBase\obj\Debug\TestDataBase.csproj.GenerateResource.Cache
+G:\VisualStudioApp\TestDataBase\TestDataBase\obj\Debug\TestDataBase.exe
+G:\VisualStudioApp\TestDataBase\TestDataBase\obj\Debug\TestDataBase.pdb
+G:\VisualStudioApp\TestDataBase\TestDataBase\bin\Debug\Oracle.DataAccess.dll
+G:\VisualStudioApp\TestDataBase\TestDataBase\obj\Debug\TestDataBase.csprojResolveAssemblyReference.cache

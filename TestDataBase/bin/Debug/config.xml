@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>  
+<prog>
+  <oracle>
+    <connString>server=127.0.0.1;uid=test;pwd=test;data source=XE</connString>
+    <oleString>Password=test;User ID=test;Data Source=XE;Persist Security Info=True</oleString>
+  </oracle>  
+</prog>

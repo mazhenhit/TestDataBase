@@ -30,7 +30,7 @@
         {
             this.buttonConnect = new System.Windows.Forms.Button();
             this.departments = new System.Windows.Forms.DataGridView();
-            this.buttonSave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.departments)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,32 +58,29 @@
             this.departments.Size = new System.Drawing.Size(641, 265);
             this.departments.TabIndex = 2;
             // 
-            // buttonSave
+            // label1
             // 
-            this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSave.Location = new System.Drawing.Point(340, 12);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(310, 31);
-            this.buttonSave.TabIndex = 3;
-            this.buttonSave.Text = "save";
-            this.buttonSave.UseVisualStyleBackColor = true;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(399, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(677, 326);
-            this.Controls.Add(this.buttonSave);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.departments);
             this.Controls.Add(this.buttonConnect);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
-            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.departments)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -91,7 +88,7 @@
 
         private System.Windows.Forms.Button buttonConnect;
         private System.Windows.Forms.DataGridView departments;
-        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.Label label1;
     }
 }
 
