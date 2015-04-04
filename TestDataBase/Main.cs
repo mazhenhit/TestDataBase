@@ -34,21 +34,27 @@ namespace TestDataBase
                 conn.Open();
                 buttonConnect.Enabled = false;
 
-                string sql = "select historyvalue from history" 
-                    + " where historyid = (select max(historyid) from history where deviceid = :device_id)";
+                string sql = "select devicename,deviceid from device";
                 cmd = new OracleCommand(sql, conn);
                 cmd.CommandType = CommandType.Text;
 
-                OracleParameter device_id = new OracleParameter();
-                device_id.OracleDbType = OracleDbType.Decimal;
-                device_id.Value = 2;
-                cmd.Parameters.Add(device_id);
+                da = new OracleDataAdapter(cmd);
+                cb = new OracleCommandBuilder(da);
+                ds = new DataSet();
+                da.Fill(ds);
 
-                OracleDataReader dr = cmd.ExecuteReader();
-				dr.Read();
+                DataTableReader dr = ds.Tables[0].CreateDataReader();
+                int count = ds.Tables[0].Rows.Count;
+                string[] names = new string[count];
+                decimal[] id = new decimal[count];
+                int temp = 0;
 
-                label1.Text = dr.GetString(0);
-
+                while (dr.Read())
+                {
+                    names[temp] = dr.GetString(0);
+                    id[temp] = dr.GetDecimal(1);
+                    temp++;
+                }
             }
             catch (OracleException ex)
             {
@@ -71,7 +77,7 @@ namespace TestDataBase
             }
             finally
             {
-                //conn.Dispose();
+                conn.Dispose();
             }
         }
 
